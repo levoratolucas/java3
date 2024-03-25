@@ -1,4 +1,4 @@
-package exe1;
+package classes;
 import classes.Aluno;
 import classes.Prova;
 import classes.Tools;
