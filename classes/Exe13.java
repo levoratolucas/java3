@@ -13,7 +13,7 @@ public class Exe13 {
 
 
         for (int i =0;i<pessoas.length;i++) {
-            Tools.println("Qual o nome da pessoa?");
+            Tools.printFormat("Qual o nome da %d° pessoa?\n",i+1);
             pessoas[i]=new Pessoa(Tools.scanfStr());
             Tools.println("qual o sexo?");
             pessoas[i].setSexo(Tools.scanfStr());
@@ -25,13 +25,12 @@ public class Exe13 {
             pessoas[i].setSaude(false);}
         }
         for (Pessoa pessoa : pessoas) {
-            if(pessoa.getSaude()==false || pessoa.getIdade() <18 ){msg="inapto";}
-            Tools.println("O "+pessoa.getnome()+" esta "+msg);
-            
+            if(pessoa.getSexo().toUpperCase().equals("F") || pessoa.getSaude()==false || pessoa.getIdade() <18) {msg="inapto";}
+            Tools.println("O "+pessoa.getnome()+" esta "+msg);            
         }   
             
             
-       Tools.println(pessoas[0].getnome());
+       
 
     }
     
