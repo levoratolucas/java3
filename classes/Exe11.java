@@ -4,7 +4,7 @@
 package classes;
 public class Exe11 {
     public static void executar(){
-        Pessoa[] pessoas = new Pessoa[5];
+        Pessoa[] pessoas = new Pessoa[56];
         String sexo;
         for(int i=0;i<pessoas.length;i++){
             Tools.printFormat("Qual o nome da %d° pessoa?\n",i+1);

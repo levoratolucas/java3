@@ -2,7 +2,7 @@ package classes;
 
 public class Pessoa {
     private String nome, cpf, sexo;
-    
+    private boolean saude;    
     private int idade;
 
     public Pessoa() {
@@ -26,7 +26,9 @@ public class Pessoa {
             this.nome = n;
         }
     }
-
+    public void setSaude(boolean s){
+    this.saude = s;
+    }
     public void setIdade(int i) {
 
         if (idade == 0) {
@@ -61,5 +63,8 @@ public class Pessoa {
 
     public String getSexo() {
         return sexo;
+    }
+    public boolean getSaude() {
+        return saude;
     }
 }
