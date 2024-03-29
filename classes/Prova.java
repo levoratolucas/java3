@@ -1,16 +1,29 @@
 package classes;
 
 public class Prova {
-    public float[] nota;
+
+    int num;
+    public float[] notas;
     public String curso = new String();
-    public String data;  
-    public Prova(){
-    }  
-    public Prova(String c,float n1,float n2,float n3){
-        curso = c;
-        nota[0] = n1;
-        nota[1] = n2;
-        nota[2] = n3;
-    }  
-      
+    public String data;
+    
+    
+
+    public Prova() {
+
+    }
+
+    public Prova(float[] n) {
+        notas = new float[n.length];
+        for(int i = 0; i< n.length;i++){
+            notas[i]=n[i];
+        }
+    }
+    public float media(){
+        float soma =0;
+        for(int i=0;i<notas.length;i++){
+         soma+=notas[i];
+        }
+        return soma/notas.length;
+     }
 }

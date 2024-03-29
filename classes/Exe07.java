@@ -6,8 +6,6 @@ package classes;
 // de 28% e os impostos 45%. Escrever um programa que leia o custo de fábrica de um carro e informe 
 // o custo ao consumidor do mesmo.
 
-import javax.tools.Tool;
-
 public class Exe07 {
     public static void executar(){
         

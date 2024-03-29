@@ -5,7 +5,7 @@
 package classes;
 
 public class Exe06 {
-    public static void Executar(){
+    public static void executar(){
         Tools.println("Qual o valor do produto?");
         float valor = Tools.scanffloat();
         Tools.println("Qual percenual pretende acrescentar?");

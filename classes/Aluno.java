@@ -8,10 +8,10 @@ public class Aluno {
               
     }
     public Aluno(String n) {
-          nome = n;     
+          this.nome = n;     
     }
     public Aluno(String n,int i) {
-          nome = n;     
-          idade =i;
+          this.nome = n;     
+          this.idade =i;
     }
 }
