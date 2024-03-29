@@ -25,6 +25,6 @@ public class Exe11 {
                 j++;
             }
         }
-        Tools.printFormat("No total são %d mulheres e %d homens", j,pessoas.length-j);
+        Tools.printFormat("No total são %d mulheres e %d homens", j   ,  pessoas.length - j    );
     }
 }

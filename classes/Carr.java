@@ -4,7 +4,11 @@ public class Carr {
     private String marca,modelo;
     private int ano=-1;
     private double valor;   
+
+
+
     public Carr(){} 
+    
     public Carr(String mr){
         marca=mr;
     } 
@@ -31,10 +35,8 @@ public class Carr {
             marca =mr;
         }
     }
-    public void setValor(double v){
-        
-            valor =v;
-        
+    public void setValor(double v){        
+            valor =v;        
     }
     public void setModelo(String m){
         if(modelo ==null){

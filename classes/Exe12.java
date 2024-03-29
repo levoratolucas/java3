@@ -9,9 +9,9 @@ package classes;
 public class Exe12 {
     public static void executar() {
         Tools.println("BEM VINDO AO CARANGO VELHO");
-        Tools.println("QUE TAL DAR UMA OLHADINHA NOS NOSSOA CARROS?");
-
-        Carr[] carrs = new Carr[20];
+        Tools.println("QUE TAL DAR UMA OLHADINHA NOS NOSSOS CARROS?");
+        int num =20;
+        Carr[] carrs = new Carr[num];
         Tools.println("HOJE NÓS TEMOS " + carrs.length + " CARROS NA GARAGEM");
 
         double valor = 15000;
@@ -23,16 +23,18 @@ public class Exe12 {
         }
         int i=0;
         String fim;
-        do {
-           
+        do {           
+            valor = carrs[i].getValor() * .88;
                 if (carrs[i].getAno() < 2000) {
                     valor = carrs[i].getValor() * .93;
                 }
-                valor = carrs[i].getValor() * .88;
                 Tools.println("este esta custando " + valor+"\nDeseja continuar? S/N");
 
                 fim = Tools.scanfStr().toUpperCase();
             i++;
+            if(i>num){
+                i=0;
+            }
         } while (!fim.equals("N"));
         i=0;
         for (Carr carr : carrs) {
