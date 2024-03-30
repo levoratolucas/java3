@@ -12,8 +12,10 @@ public class Exe14 {
         for(int i = 0;i<produtos.length;i++){
             Tools.printFormat("qual o valor de custo do %d° produto\n",i+1);
             produtos[i] = new Produto(Tools.scanffloat());
+
             Tools.printFormat("qual o valor de venda do %d° produto\n",i+1);
             produtos[i].setPrecoVenda(Tools.scanffloat());
+            
             loja.setProduto(produtos[i]);
         }
         float mediaVenda =0,j=0,mediaCusto=0;
