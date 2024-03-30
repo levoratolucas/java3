@@ -18,6 +18,10 @@ public class Tools {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextFloat();
     }
+    public static double scanfdouble() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextDouble();
+    }
     public static String scanfStr() {
         Scanner scanner = new Scanner(System.in);
         return scanner.next();

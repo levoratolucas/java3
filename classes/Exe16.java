@@ -9,7 +9,7 @@
 package classes;
 
 public class Exe16 {
-    public static void executar() {
+    public static Empresa executar() {
         int cont = 584;
         double salario;
         Pessoa[] pessoas = new Pessoa[cont];
@@ -37,7 +37,7 @@ public class Exe16 {
             }
             empresa.getFuncionario(i).setSalario(salario);
         }
-
+        return empresa;
     }
 
 }

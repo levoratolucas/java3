@@ -19,4 +19,7 @@ public class Empresa {
     public Funcionario getFuncionario(int i){
         return funcionarios.get(i);
     }
+    public int countFuncionarios(){
+        return funcionarios.size();
+    }
 }
