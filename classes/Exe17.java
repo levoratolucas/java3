@@ -8,20 +8,23 @@ package classes;
 public class Exe17 {
     public static void executar(){
         Exe16 exe16 = new Exe16();
-        Empresa empresa = exe16.executar();
+        Empresa empresa = exe16.empresa(584);
+
         Tools.println("Qual o salario minimo?");
+
         double salarioMinimo = Tools.scanfdouble();
         
         for ( int i = 0;i<empresa.countFuncionarios();i++) {
-            Tools.printFormat("qual o nome do %d° Funcionario?",i+1);
-            empresa.getFuncionario(i).GetPessoa().setNome(Tools.scanfStr());
-            String nome =    empresa.getFuncionario(i).GetPessoa().getnome();
-            double salario =empresa.getFuncionario(i).GetSalario() ;
-            Tools.printFormat("%s seu salario é de %.2f\n",nome ,salario*salarioMinimo);
-            
-        }
 
-        
-    }
-    
+            Tools.printFormat("qual o nome do %d° Funcionario?",i+1);
+
+            empresa.getFuncionario(i).GetPessoa().setNome(Tools.scanfStr());
+
+            String nome =    empresa.getFuncionario(i).GetPessoa().getnome();
+
+            double salario =empresa.getFuncionario(i).GetSalario() ;
+
+            Tools.printFormat("%s seu salario é de %.2f\n",nome ,salario*salarioMinimo);            
+        }                
+    }    
 }

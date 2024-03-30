@@ -9,18 +9,25 @@
 package classes;
 
 public class Exe16 {
-    public static Empresa executar() {
-        int cont = 584;
-        double salario;
+    public static Empresa empresa(int cont){
+        
         Pessoa[] pessoas = new Pessoa[cont];
         Funcionario funcionario;
         Empresa empresa = new Empresa();
+        
         for (int i = 0; i < cont; i++) {
             pessoas[i] = new Pessoa();
             funcionario = new Funcionario(pessoas[i]);
             funcionario.setSalario((4+i)/3);
             empresa.setFuncionario(funcionario);      
         }
+        return empresa;
+    }
+    public static void executar() {
+        
+        int cont = 584;
+        double salario;
+        Empresa empresa = empresa(cont);       
         for(int i=0;i<cont;i++){
             salario = empresa.getFuncionario(i).GetSalario();
             if(salario < 3){
@@ -36,8 +43,10 @@ public class Exe16 {
                salario*=1.1;
             }
             empresa.getFuncionario(i).setSalario(salario);
+            Tools.printFormat("salario ajustado %.2f\n",empresa.getFuncionario(i).GetSalario());
         }
-        return empresa;
+
+        
     }
 
 }
