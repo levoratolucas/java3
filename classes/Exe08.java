@@ -11,9 +11,10 @@ public class Exe08 {
         String  msg ="aprovado";
         float[] notas =new float[num];
         Tools.println("Qual seu nome?");
-        Aluno aluno = new Aluno(Tools.scanfStr());
+        Pessoa pessoa = new Pessoa(Tools.scanfStr());
+        Aluno aluno = new Aluno(pessoa);
         for(int i =0;i<num;i++){
-            Tools.println(aluno.nome+" Qual sua nota da prora "+(i+1));
+            Tools.println(aluno.getNome()+" Qual sua nota da prova "+(i+1));
             notas[i]=Tools.scanffloat();            
         }
         Prova prova = new Prova(notas);
@@ -25,7 +26,7 @@ public class Exe08 {
             msg="Recuperação";
         }
 
-        Tools.printFormat(aluno.nome+" Sua media foi %.2f Então voce está "+msg,media);
+        Tools.printFormat(aluno.getNome()+" Sua media foi %.2f Então voce está "+msg,media);
         
     }
     
