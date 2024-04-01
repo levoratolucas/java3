@@ -2,6 +2,6 @@
 import classes.*;
 public class Programs {
     public static void main(String[] args) {
-       Exe01.executar();
+       Exe02.executar();
     }
 }
