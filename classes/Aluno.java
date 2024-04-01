@@ -1,6 +1,6 @@
 package classes;
 
-public class Aluno {
+public class Aluno extends Pessoa {
       private Pessoa aluno;
       private String matricula;
 

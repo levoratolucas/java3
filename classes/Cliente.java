@@ -1,6 +1,6 @@
 package classes;
 
-public class Cliente {
+public class Cliente extends Pessoa {
     private int grupo;
     private Pessoa pessoa = new Pessoa();
 

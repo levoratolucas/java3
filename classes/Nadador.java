@@ -1,7 +1,7 @@
 // ./Nadador.java 
 package classes;
 
-public class Nadador {
+public class Nadador extends Pessoa {
 
     private Pessoa pessoa = new Pessoa();
     private int categoria;

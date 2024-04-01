@@ -1,6 +1,6 @@
 package classes;
 
-public class Funcionario {
+public class Funcionario extends Pessoa {
     
         private double salario;
         private Pessoa pessoa = new Pessoa();
