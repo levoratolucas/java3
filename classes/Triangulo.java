@@ -9,9 +9,11 @@ package classes;
 public class Triangulo {
     private int[] lados = new int[3];
     private String tipo;
+
     public void setLado(int lado, int i){
         this.lados[i]=lado;
     }
+    
     public int[] getLado(){
         return lados;
     }
